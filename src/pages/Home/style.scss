@@ -1,0 +1,123 @@
+@import '../../sass/base/colors';
+
+.homepage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.blob-top-left {
+  height: calc(60px + 28vh);
+  left: 0px;
+  position: absolute;
+  top: -50px;
+  width: 26vw;
+}
+
+.blob-top-left-shadow {
+  height: calc(100px + 22vh);
+  left: 0px;
+  position: absolute;
+  top: -50px;
+  width: 22vw;
+}
+
+.blob-top-right {
+  height: calc(120px + 20vh);
+  right: 0px;
+  position: absolute;
+  top: -50px;
+  width: 32vw;
+}
+
+.blob-top-right-shadow {
+  height: calc(100px + 20vh);
+  right: 0px;
+  position: absolute;
+  top: -50px;
+  width: 28vw;
+}
+
+.cross-center {
+  left: 0;
+  right: 5vw;
+  margin: auto;
+  position: absolute;
+  top: 15%;
+  width: calc(50px + 8vw);
+  text-shadow: 1px 4px $shadow-color;
+  filter: drop-shadow(1.5px 4.5px $shadow-color); 
+}
+
+.cross-left {
+  left: 8vw;
+  position: absolute;
+  top: 32%;
+  width: calc(40px + 4vw);
+  filter: drop-shadow(1.5px 4.5px $shadow-color);
+}
+
+.cross-right {
+  right: 6vw;
+  position: absolute;
+  top: 40%;
+  width: calc(20px + 4vw);
+  filter: drop-shadow(1.5px 4.5px $shadow-color);
+}
+
+.circle-left {
+  left: 15vw;
+  position: absolute;
+  bottom: 15%;
+  width: calc(30px + 5vw);
+  filter: drop-shadow(1.5px 4.5px $shadow-color);
+}
+
+.circle-right {
+  right: 15vw;
+  position: absolute;
+  bottom: 10%;
+  width: calc(60px + 5vw);
+  filter: drop-shadow(1.5px 4.5px $shadow-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: $white-color;
+  font-size: calc(24px + 1vw);
+  margin-bottom: 4vh;
+  margin-top: 10vh;
+  text-shadow: 1px 4px $shadow-color;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-play {
+  background-color: $primary-color;
+  padding: calc(14px + 0.2vw);
+  border-radius: 10px;
+  text-align: center;
+  width: calc(150px + 2vw);
+  box-shadow: 1px 6px $secondary-color;
+  span {
+    color: $white-color;
+    font-weight: bold;
+  }
+}
+
+.degraded-rectangle-bottom {
+  background-image: linear-gradient($black-color, $primary-color);
+  padding: 15px;
+}

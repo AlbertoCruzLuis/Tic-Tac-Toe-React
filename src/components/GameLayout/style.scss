@@ -1,0 +1,79 @@
+@import '../../sass/base/colors';
+
+.gamelayout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.degraded-rectangle-top {
+  background-image: linear-gradient($primary-color, $black-color);
+  padding: 25px;
+  margin-bottom: 2vh;
+}
+
+.blob-bottom-left {
+  left: 0px;
+  position: absolute;
+  bottom: 0px;
+  width: calc(30px + 18vw);
+}
+
+.blob-bottom-left-shadow {
+  left: 0px;
+  position: absolute;
+  bottom: 0px;
+  width: calc(25px + 16vw);
+}
+
+.blob-bottom-right {
+  right: 0px;
+  position: absolute;
+  bottom: 0px;
+  width: calc(30px + 20vw);
+}
+
+.blob-bottom-right-shadow {
+  right: 0px;
+  position: absolute;
+  bottom: 0px;
+  width: calc(25px + 16vw);
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin: 2vh;
+}
+
+.restart-btn {
+  background-color: rgba($white-color, .8);
+  color: $primary-color;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 2vw;
+  margin: calc(18px + 1vw);
+  text-decoration: none;
+  .restart-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.back-btn {
+  background-color: $primary-color;
+  color: rgba($white-color, .8);
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 2vw;
+  text-decoration: none;
+  margin: calc(18px + 1vw);
+
+  .back-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

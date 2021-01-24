@@ -1,0 +1,52 @@
+@import '../../sass/base/colors';
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+}
+
+.scoreboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: calc(10px + 0.1vw);
+  margin: 5vh;
+  background-color: rgba($white-color, .6);
+  border-radius: 10px;
+}
+
+
+
+.player1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $blue-color;
+  padding: calc(12px + 0.2vw);
+  border-radius: 10px;
+  border: calc(2px + 0.1vw) solid rgba($black-color, .4);
+  color: $white-color;
+  font-size: calc(8px + 1vw);
+  font-weight: bold;
+}
+
+.player2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $red-color;
+  padding: calc(12px + 0.2vw);
+  border-radius: 10px;
+  border: calc(2px + 0.1vw) solid rgba($black-color, .4);
+  color: $white-color;
+  font-size: calc(8px + 1.1vw);
+  font-weight: bold;
+}
+
+.versus {
+  font-weight: bold;
+  font-size: calc(12px + 0.8vw);
+  margin-left: calc(18px + 1.5vw);
+  margin-right: calc(18px + 1.5vw);
+}
