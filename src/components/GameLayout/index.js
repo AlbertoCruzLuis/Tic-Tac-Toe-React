@@ -21,9 +21,16 @@ const GameLayout = () => {
   useEffect(() => {
     changeTurn(randomTurnSelection());
   },[]);
+
+  const colorTurn = () => {
+    let blue = "#206357";
+    let red = "#792929";
+    return turn === 1 ? blue : red;
+  }
+
   return (
     <div className="gamelayout">
-      <div className="degraded-rectangle-top">
+      <div className="degraded-rectangle-top" style={{ backgroundImage: 'linear-gradient(' + colorTurn() + ', rgb(27, 27, 27))' }}>
       </div>
       <ScoreBoard></ScoreBoard>
       <Board></Board>
