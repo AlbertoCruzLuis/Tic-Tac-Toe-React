@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/Tic-Tac-Toe-React/static/css/main.2177a26e.chunk.css",
+    "main.js": "/Tic-Tac-Toe-React/static/js/main.2a64d53a.chunk.js",
+    "main.js.map": "/Tic-Tac-Toe-React/static/js/main.2a64d53a.chunk.js.map",
+    "runtime-main.js": "/Tic-Tac-Toe-React/static/js/runtime-main.76a85e07.js",
+    "runtime-main.js.map": "/Tic-Tac-Toe-React/static/js/runtime-main.76a85e07.js.map",
+    "static/js/2.236a7ed0.chunk.js": "/Tic-Tac-Toe-React/static/js/2.236a7ed0.chunk.js",
+    "static/js/2.236a7ed0.chunk.js.map": "/Tic-Tac-Toe-React/static/js/2.236a7ed0.chunk.js.map",
+    "index.html": "/Tic-Tac-Toe-React/index.html",
+    "static/css/main.2177a26e.chunk.css.map": "/Tic-Tac-Toe-React/static/css/main.2177a26e.chunk.css.map",
+    "static/js/2.236a7ed0.chunk.js.LICENSE.txt": "/Tic-Tac-Toe-React/static/js/2.236a7ed0.chunk.js.LICENSE.txt",
+    "static/media/backicon.28203c5f.svg": "/Tic-Tac-Toe-React/static/media/backicon.28203c5f.svg",
+    "static/media/blobbottomleft.99908a78.svg": "/Tic-Tac-Toe-React/static/media/blobbottomleft.99908a78.svg",
+    "static/media/blobbottomleftshadow.bbcd3c4b.svg": "/Tic-Tac-Toe-React/static/media/blobbottomleftshadow.bbcd3c4b.svg",
+    "static/media/blobbottomright.16d6e69d.svg": "/Tic-Tac-Toe-React/static/media/blobbottomright.16d6e69d.svg",
+    "static/media/blobbottomrightshadow.57929ffb.svg": "/Tic-Tac-Toe-React/static/media/blobbottomrightshadow.57929ffb.svg",
+    "static/media/blobtopleft.6f761a9a.svg": "/Tic-Tac-Toe-React/static/media/blobtopleft.6f761a9a.svg",
+    "static/media/blobtopleftshadow.413a3748.svg": "/Tic-Tac-Toe-React/static/media/blobtopleftshadow.413a3748.svg",
+    "static/media/blobtopright.88e31e43.svg": "/Tic-Tac-Toe-React/static/media/blobtopright.88e31e43.svg",
+    "static/media/blobtoprightshadow.2444e355.svg": "/Tic-Tac-Toe-React/static/media/blobtoprightshadow.2444e355.svg",
+    "static/media/circle.bf7ea98d.svg": "/Tic-Tac-Toe-React/static/media/circle.bf7ea98d.svg",
+    "static/media/circleBoard.bf8de4ce.svg": "/Tic-Tac-Toe-React/static/media/circleBoard.bf8de4ce.svg",
+    "static/media/cross.901f4291.svg": "/Tic-Tac-Toe-React/static/media/cross.901f4291.svg",
+    "static/media/crossBoard.ecca2184.svg": "/Tic-Tac-Toe-React/static/media/crossBoard.ecca2184.svg",
+    "static/media/reloadicon.d60843c3.svg": "/Tic-Tac-Toe-React/static/media/reloadicon.d60843c3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.76a85e07.js",
+    "static/js/2.236a7ed0.chunk.js",
+    "static/css/main.2177a26e.chunk.css",
+    "static/js/main.2a64d53a.chunk.js"
+  ]
+}
