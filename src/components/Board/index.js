@@ -1,71 +1,52 @@
-import React, {useState, useEffect, useContext} from 'react';
-import "./style.scss";
-import Cell from "../Cell";
-import {minimax, emptyCells} from "../../utils/minimax";
-import BoardLogic from "../../utils/boardLogic"
-import GameContext from "../../contexts/GameContext";
+import React, { useCallback, useEffect, useContext} from 'react';
+import { moveIA } from 'utils/moveIA'
+import GameContext from "contexts/GameContext";
+import Cell from "components/Cell";
+import styled from 'styled-components';
+import './style.scss'
 
-const Board = () => {
-  const [matrix, setMatrix] = useState([]);
+const Board = ({size = 3, matrix, setMatrix}) => {
   const {
     turn,
     changeTurn
   } = useContext(GameContext);
 
-  useEffect(() => {
-    let newBoard = new BoardLogic(3);
-    setMatrix(newBoard.matrix);
-  }, []);
+  const secondaryColor = "#470147"
+  const BoardSpace = styled.div`
+  display: grid;
+  grid-template-columns: repeat(${size}, auto);
+  background-color: ${secondaryColor};
+  border-radius: 10px;
+  padding: calc(2px + 0.3vw);
+  `
 
   useEffect(() => {
     if (turn === -1) {
-      moveIA();
+      moveIA(matrix, setMatrix, turn, changeTurn);
     }
-  }, [turn]);
+  }, [matrix, turn, changeTurn, setMatrix]);
 
-  const selectCell = (posX, posY) => {
-    console.log("Select Cell");
+  const selectCell = useCallback((posX, posY, matrix) => {
     const newMatrix = [...matrix];
     newMatrix[posX][posY] = turn;
     setMatrix(newMatrix);
     changeTurn(-turn);
-  }
-
-  const moveIA = () => {
-    const newMatrix = [...matrix];
-    let bestMove = minimax(matrix,emptyCells(matrix).length,turn);
-    console.log(bestMove);
-    if (bestMove[0] === -1 && bestMove[1] === -1) {
-      if(bestMove[2] === 0) {
-        alert("None Wins");
-      } else if(bestMove[2] === -1) {
-        alert("Win IA");
-      } else {
-        alert("You are the Winner!");
-      }
-    } else {
-      newMatrix[bestMove[0]][bestMove[1]] = turn;
-      setMatrix(newMatrix);
-    }
-    changeTurn(-turn);
-  }
+  }, [])
 
   return (
-    <div className="board">
+    <section className="board">
       <div className="board-container">
-        <div className="board-space">
-        { matrix.map((rows, posX) =>
-          <div key={posX} className="rows">
-            { rows.map((cell, posY) => 
-              <Cell key={posY} 
-                    type={cell}
-                    selectCell={() => selectCell(posX,posY)}/>
-            )}
-          </div>
-        )}
-        </div>
+        <BoardSpace size={size}>
+          { matrix.map((rows, posX) =>
+            rows.map((cell, posY) => 
+                <Cell key={posY} 
+                      type={cell}
+                      selectCell={() => selectCell(posX,posY, matrix)}/>
+              )
+          )}
+        </BoardSpace>
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -1,0 +1,27 @@
+@import '../../sass/base/colors';
+
+.secondary {
+  background-color: rgba($white-color, .8);
+  color: $primary-color;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 2vw;
+  margin: calc(18px + 1vw);
+  text-decoration: none;
+}
+
+.primary {
+  background-color: $primary-color;
+  color: rgba($white-color, .8);
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 2vw;
+  text-decoration: none;
+  margin: calc(18px + 1vw);
+}
+
+img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

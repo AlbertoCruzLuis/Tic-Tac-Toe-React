@@ -80,7 +80,8 @@ const someoneWin = (board) => {
   return winPlayer(board, HUMAN) || winPlayer(board, IA); 
 }
 
-const winPlayer = (board, player) => {
+export const winPlayer = (board, player) => {
+  if (!board.length) return false  
   let winner_line = winnerState(board);
   for (let i = 0; i < winner_line.length; i++) {
     let line_filled = 0;
@@ -122,4 +123,22 @@ export const emptyCells = (board) => {
     }
   }
   return empty_cells_pos;
+}
+
+export const fullCells = (board) => {
+  if (!board.length) return false;
+  for (let i = 0; i < board.length; i++) {
+    for (let j = 0; j < board.length; j++) {
+      if (board[i][j] === 0) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
+
+export const STATE_WINNER = {
+  'HUMAN' : +1,
+  'IA' : -1,
+  'NONE' : 0
 }

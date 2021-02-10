@@ -3,7 +3,7 @@ import "./style.scss";
 
 const ScoreBoard = () => {
   return (
-    <div className="scoreboard">
+    <section className="scoreboard">
       <div className="scoreboard-container">
         <div className="player1">
           <span>P1</span>
@@ -15,8 +15,8 @@ const ScoreBoard = () => {
           <span>IA</span>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
-export default ScoreBoard;
+export default React.memo(ScoreBoard)

@@ -1,0 +1,29 @@
+@import '../../sass/base/colors';
+
+.blob-bottom-left {
+  left: 0px;
+  position: absolute;
+  bottom: 0px;
+  width: calc(30px + 18vw);
+}
+
+.blob-bottom-left-shadow {
+  left: 0px;
+  position: absolute;
+  bottom: 0px;
+  width: calc(25px + 16vw);
+}
+
+.blob-bottom-right {
+  right: 0px;
+  position: absolute;
+  bottom: 0px;
+  width: calc(30px + 20vw);
+}
+
+.blob-bottom-right-shadow {
+  right: 0px;
+  position: absolute;
+  bottom: 0px;
+  width: calc(25px + 16vw);
+}

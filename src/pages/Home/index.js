@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import blobtopleft from "../../assets/blobtopleft.svg";
-import blobtopleftshadow from "../../assets/blobtopleftshadow.svg";
-import blobtopright from "../../assets/blobtopright.svg";
-import blobtoprightshadow from "../../assets/blobtoprightshadow.svg";
-import cross from "../../assets/cross.svg";
-import circle from "../../assets/circle.svg";
+import blobtopleft from "assets/blobtopleft.svg";
+import blobtopleftshadow from "assets/blobtopleftshadow.svg";
+import blobtopright from "assets/blobtopright.svg";
+import blobtoprightshadow from "assets/blobtoprightshadow.svg";
+import cross from "assets/cross.svg";
+import circle from "assets/circle.svg";
 import './style.scss';
 
 const HomePage = () => {

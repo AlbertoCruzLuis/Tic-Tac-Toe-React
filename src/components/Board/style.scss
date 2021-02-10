@@ -12,15 +12,3 @@
   padding: calc(10px + 1vw);
   margin: 2vh;
 }
-
-.board-space {
-  display: flex;
-  flex-direction: column;
-  background-color: $secondary-color;
-  border-radius: 10px;
-  padding: calc(2px + 0.3vw);
-}
-
-.rows {
-  display: flex;
-}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import GameContext from "../contexts/GameContext"
+import GameContext from "contexts/GameContext"
 
 const GameProvider = ({ children }) => {
   const [turn, setTurn] = useState(1);

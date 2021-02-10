@@ -1,6 +1,6 @@
 import React from 'react';
-import GameLayout from "../../components/GameLayout"
-import GameProvider from "../../providers/GameProvider";
+import GameLayout from "components/GameLayout"
+import GameProvider from "providers/GameProvider";
 
 const GamePage = () => {
   return (
